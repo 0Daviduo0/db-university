@@ -8,9 +8,9 @@ Group By
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
-    SELECT YEAR(enrolment_date), COUNT(*)
-    FROM students
-    GROUP BY YEAR;
+    SELECT office_address, COUNT(*)
+    FROM teachers
+    GROUP BY office_address;
 
 
 3. Calcolare la media dei voti di ogni appello d'esame
@@ -22,9 +22,9 @@ Group By
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
-    SELECT office_address, COUNT(*)
-    FROM teachers
-    GROUP BY office_address;
+    SELECT department_id, COUNT(*)
+    FROM degrees
+    GROUP BY department_id;
 
 
 Join
